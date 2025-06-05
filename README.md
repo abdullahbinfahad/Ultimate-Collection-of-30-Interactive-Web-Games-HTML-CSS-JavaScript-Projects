@@ -1,0 +1,2 @@
+# Ultimate-Collection-of-30-Interactive-Web-Games-HTML-CSS-JavaScript-Projects
+This repository features a curated set of 30+ mini web-based games built using HTML, CSS, and JavaScript. Each game is crafted to demonstrate unique logic, interactivity, and user experience principles. Ideal for learners, educators, and developers looking to understand game mechanics, DOM manipulation, animations, and responsive design.
