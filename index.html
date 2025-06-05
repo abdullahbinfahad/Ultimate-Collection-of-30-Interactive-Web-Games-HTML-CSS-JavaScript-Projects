@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Arcade Hub - Ultimate Gaming Experience</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loader Animation -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">LOADING ARCADE...</div>
+        </div>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <i class="fas fa-sun"></i>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>🕹️ NEON ARCADE HUB</h1>
+        <p>Your ultimate destination for retro and modern gaming experiences</p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Featured Game Section -->
+        <div class="featured-game">
+            <div class="featured-content">
+                <div class="featured-badge">FEATURED GAME</div>
+                <h2 class="featured-title">Cyber Chess Masters</h2>
+                <p class="featured-desc">Challenge your strategic thinking with our advanced AI opponent in this neon-themed chess experience. Multiple difficulty levels and special game modes available.</p>
+                <a href="/Games/Chess/index.html" class="play-btn">
+                    <i class="fas fa-play"></i> PLAY NOW
+                </a>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search for games...">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <!-- Category Navigation -->
+        <div class="category-nav">
+            <div class="category-btn active" data-category="all">
+                <i class="fas fa-gamepad"></i> All Games
+            </div>
+            <div class="category-btn" data-category="action">
+                <i class="fas fa-bullseye"></i> Action
+            </div>
+            <div class="category-btn" data-category="puzzle">
+                <i class="fas fa-puzzle-piece"></i> Puzzle
+            </div>
+            <div class="category-btn" data-category="arcade">
+                <i class="fas fa-joystick"></i> Arcade
+            </div>
+            <div class="category-btn" data-category="mind">
+                <i class="fas fa-brain"></i> Mind
+            </div>
+            <div class="category-btn" data-category="skill">
+                <i class="fas fa-trophy"></i> Skill
+            </div>
+            <div class="category-btn" data-category="word">
+                <i class="fas fa-font"></i> Word
+            </div>
+            <div class="category-btn" data-category="casual">
+                <i class="fas fa-smile"></i> Casual
+            </div>
+        </div>
+
+        <!-- Game Grid -->
+        <div class="game-grid">
+            <!-- Action Games -->
+            <div class="game-card" data-category="action" id="action-games">
+                <h2 class="game-title">🎯 Action Arena</h2>
+                <a href="/Games/Archery-Game/index.html" class="game-item" data-id="archery">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-mikhail-nilov-6620750-scaled.jpg" class="game-image" alt="Archery">
+                    <div class="game-info">
+                        <div class="game-name">Laser Archery Challenge</div>
+                        <span class="game-badge">NEW</span>
+                    </div>
+                </a>
+                <a href="/Games/Ping-Pong-Game/index.html" class="game-item" data-id="pingpong">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-mikhail-nilov-6835830-scaled.jpg" class="game-image" alt="Ping Pong">
+                    <div class="game-info">
+                        <div class="game-name">Neon Pong Master</div>
+                    </div>
+                </a>
+                <a href="/Games/Fruit-Slicer-Game/index.html" class="game-item" data-id="fruitslicer">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-foundertips-3827423-scaled.jpg" class="game-image" alt="Fruit Ninja">
+                    <div class="game-info">
+                        <div class="game-name">Fruit Ninja Blitz</div>
+                    </div>
+                </a>
+                <a href="/Games/Whack-A-Mole-Game/index.html" class="game-item" data-id="whackamole">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-anntarazevich-8151597-scaled.jpg" class="game-image" alt="Whack a Mole">
+                    <div class="game-info">
+                        <div class="game-name">Mole Whackdown Extreme</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Puzzle Games -->
+            <div class="game-card" data-category="puzzle" id="puzzle-games">
+                <h2 class="game-title">🧩 Brain Teasers</h2>
+                <a href="/Games/Candy-Crush-Game/index.html" class="game-item" data-id="candycrush">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-alex-gonzo-1518705084-27101280-scaled.jpg" class="game-image" alt="Candy Crush">
+                    <div class="game-info">
+                        <div class="game-name">Candy Crush Saga X</div>
+                        <span class="game-badge">HOT</span>
+                    </div>
+                </a>
+                <a href="/Games/Minesweeper-Game/index.html" class="game-item" data-id="minesweeper">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-dhanno-18873679-scaled.jpg" class="game-image" alt="Minesweeper">
+                    <div class="game-info">
+                        <div class="game-name">Minefield Survival Pro</div>
+                    </div>
+                </a>
+                <a href="/Games/Tetris-Game/index.html" class="game-item" data-id="tetris">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-mikhail-nilov-8108656-scaled.jpg" class="game-image" alt="Tetris">
+                    <div class="game-info">
+                        <div class="game-name">Tetris Quantum</div>
+                    </div>
+                </a>
+                <a href="/Games/2048-Game/index.html" class="game-item" data-id="2048">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-jeswin-5023567-scaled.jpg" class="game-image" alt="2048">
+                    <div class="game-info">
+                        <div class="game-name">2048 Infinity</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Arcade Classics -->
+            <div class="game-card" data-category="arcade" id="arcade-games">
+                <h2 class="game-title">🕹️ Retro Arcade</h2>
+                <a href="/Games/Snake-Game/index.html" class="game-item" data-id="snake">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-koolshooters-8984639-scaled.jpg" class="game-image" alt="Snake">
+                    <div class="game-info">
+                        <div class="game-name">Neon Snake Xtreme</div>
+                    </div>
+                </a>
+                <a href="/Games/Breakout-Game/index.html" class="game-item" data-id="breakout">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-vika-glitter-392079-7439294-scaled.jpg" class="game-image" alt="Breakout">
+                    <div class="game-info">
+                        <div class="game-name">Laser Breakout</div>
+                    </div>
+                </a>
+                <a href="/Games/Flappy-Bird-Game/index.html" class="game-item" data-id="flappybird">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-artempodrez-6941841-scaled.jpg" class="game-image" alt="Flappy Bird">
+                    <div class="game-info">
+                        <div class="game-name">Flappy Bird Reloaded</div>
+                    </div>
+                </a>
+                <a href="/Games/Crossy-Road-Game/index.html" class="game-item" data-id="crossyroad">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-anntarazevich-4839770-scaled.jpg" class="game-image" alt="Crossy Road">
+                    <div class="game-info">
+                        <div class="game-name">Cyber Road Crossing</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Brain Games -->
+            <div class="game-card" data-category="mind" id="mind-games">
+                <h2 class="game-title">🧠 Mind Games</h2>
+                <a href="/Games/Memory-Card-Game/index.html" class="game-item" data-id="memory">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-cottonbro-10610368-scaled.jpg" class="game-image" alt="Memory Game">
+                    <div class="game-info">
+                        <div class="game-name">Memory Matrix Pro</div>
+                    </div>
+                </a>
+                <a href="/Games/Tic-Tac-Toe/index.html" class="game-item" data-id="tictactoe">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-marcela-artola-1675360178-28454507-scaled.jpg" class="game-image" alt="Tic Tac Toe">
+                    <div class="game-info">
+                        <div class="game-name">Quantum Tic-Tac-Toe</div>
+                    </div>
+                </a>
+                <a href="/Games/Connect-Four-Game/index.html" class="game-item" data-id="connectfour">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-rdne-7982835-scaled.jpg" class="game-image" alt="Connect Four">
+                    <div class="game-info">
+                        <div class="game-name">Connect 4 Championship</div>
+                    </div>
+                </a>
+                <a href="/Games/Simon-Says-Game/index.html" class="game-item" data-id="simonsays">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-a-darmel-7862609-scaled.jpg" class="game-image" alt="Simon Says">
+                    <div class="game-info">
+                        <div class="game-name">Simon's Neon Challenge</div>
+                    </div>
+                </a>
+                <a href="/Games/Chess/index.html" class="game-item" data-id="chess">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-ann-bugaichuk-371879753-14565159.jpg" class="game-image" alt="Chess">
+                    <div class="game-info">
+                        <div class="game-name">Cyber Chess Masters</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Skill Challenges -->
+            <div class="game-card" data-category="skill" id="skill-games">
+                <h2 class="game-title">🎯 Skill Challenges</h2>
+                <a href="/Games/Tower-Blocks/index.html" class="game-item" data-id="towerblocks">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-gustavo-fring-7489080-scaled.jpg" class="game-image" alt="Tower Blocks">
+                    <div class="game-info">
+                        <div class="game-name">Sky Tower Builder</div>
+                    </div>
+                </a>
+                <a href="/Games/Tilting-Maze-Game/index.html" class="game-item" data-id="maze">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-michele-raffoni-88958531-10567105-scaled.jpg" class="game-image" alt="Maze">
+                    <div class="game-info">
+                        <div class="game-name">Neon Labyrinth</div>
+                    </div>
+                </a>
+                <a href="/Games/Insect-Catch-Game/index.html" class="game-item" data-id="insectcatch">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-wendywei-2820819-scaled.jpg" class="game-image" alt="Insect Catch">
+                    <div class="game-info">
+                        <div class="game-name">Bug Zapper Pro</div>
+                    </div>
+                </a>
+                <a href="/Games/Shape-Clicker-Game/index.html" class="game-item" data-id="shapeclicker">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-kseniachernaya-8535606-scaled.jpg" class="game-image" alt="Shape Clicker">
+                    <div class="game-info">
+                        <div class="game-name">Shape Shifter Challenge</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Word & Number -->
+            <div class="game-card" data-category="word" id="word-games">
+                <h2 class="game-title">🔤 Word &amp; Number</h2>
+                <a href="/Games/Hangman-Game/index.html" class="game-item" data-id="hangman">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-gerhard-lipold-274371-6226624-scaled.jpg" class="game-image" alt="Hangman">
+                    <div class="game-info">
+                        <div class="game-name">Hangman Ultimate</div>
+                    </div>
+                </a>
+                <a href="/Games/Typing-Game/index.html" class="game-item" data-id="typing">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-cottonbro-4046153-scaled.jpg" class="game-image" alt="Typing">
+                    <div class="game-info">
+                        <div class="game-name">Typing Dojo Master</div>
+                    </div>
+                </a>
+                <a href="/Games/Speed-Typing-Game/index.html" class="game-item" data-id="speedtyping">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-jhonnysalasb-10371898-scaled.jpg" class="game-image" alt="Speed Typing">
+                    <div class="game-info">
+                        <div class="game-name">Speed Typing Showdown</div>
+                    </div>
+                </a>
+                <a href="/Games/Type-Number-Guessing-Game/index.html" class="game-item" data-id="numberguessing">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-olga-volkovitskaia-131638009-17309789-scaled.jpg" class="game-image" alt="Number Guessing">
+                    <div class="game-info">
+                        <div class="game-name">Number Ninja</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Casual Fun -->
+            <div class="game-card" data-category="casual" id="casual-games">
+                <h2 class="game-title">😎 Casual Fun</h2>
+                <a href="/Games/Rock-Paper-Scissors/index.html" class="game-item" data-id="rockpaperscissors">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-darina-belonogova-8789755-scaled.jpg" class="game-image" alt="Rock Paper Scissors">
+                    <div class="game-info">
+                        <div class="game-name">Rock Paper Scissors Royale</div>
+                    </div>
+                </a>
+                <a href="/Games/Dice-Roll-Simulator/index.html" class="game-item" data-id="diceroll">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-grizzlybear-965879-scaled.jpg" class="game-image" alt="Dice Roll">
+                    <div class="game-info">
+                        <div class="game-name">Dice King Challenge</div>
+                    </div>
+                </a>
+                <a href="/Games/Emoji-Catcher-Game/index.html" class="game-item" data-id="emojicatcher">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-cottonbro-5780774-scaled.jpg" class="game-image" alt="Emoji Catcher">
+                    <div class="game-info">
+                        <div class="game-name">Emoji Blitz Catcher</div>
+                    </div>
+                </a>
+                <a href="/Games/Quiz-Game/index.html" class="game-item" data-id="quiz">
+                    <img src="http://abdullahbinfahad.com/wp-content/uploads/2025/05/pexels-postiglioni-863951-scaled.jpg" class="game-image" alt="Quiz">
+                    <div class="game-info">
+                        <div class="game-name">Trivia Mastermind</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Recently Played Section -->
+        <div class="recently-played-games"></div>
+    </div>
+
+    <!-- Game Bar -->
+    <div class="game-bar">
+        <div class="game-bar-content">
+            <div class="game-bar-nav">
+                <div class="nav-item active" data-target="action-games">Action</div>
+                <div class="nav-item" data-target="puzzle-games">Puzzle</div>
+                <div class="nav-item" data-target="arcade-games">Arcade</div>
+                <div class="nav-item" data-target="mind-games">Mind</div>
+                <div class="nav-item" data-target="skill-games">Skill</div>
+                <div class="nav-item" data-target="word-games">Word</div>
+                <div class="nav-item" data-target="casual-games">Casual</div>
+            </div>
+            <div class="game-bar-actions">
+                <div class="action-btn">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="action-btn">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="action-btn">
+                    <i class="fas fa-cog"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
